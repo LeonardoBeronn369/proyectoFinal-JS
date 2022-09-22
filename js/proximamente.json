@@ -1,0 +1,23 @@
+[
+    {
+    "id": 1,
+    "nombre": "Cartera",
+    "precio": "Proximamente",
+    "desc": "cartera Caroline en cuero Graneado",
+    "img": "./img/cartera1.jpg"
+},
+{
+    "id": 2,
+    "nombre": "Cartera",
+    "precio": "Proximamente",
+    "desc": "Cartera de mano en cuero Graneado",
+    "img": "./img/cartera2.jpg"
+},
+{
+    "id": 3,
+    "nombre": "Cartera",
+    "precio": "Proximamente",
+    "desc" : "Cartera de mano y hombro cuero Graneado",
+    "img": "./img/cartera3.jpg"
+}
+]

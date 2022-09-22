@@ -1,0 +1,367 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  text-align: center;
+}
+/* ----- Header ----*/
+.header {
+  display: flex;
+  width: 100%;
+  background-color: #fcd5ce;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 240px;
+  width: 240px;
+  margin-left: 2rem;
+}
+
+
+h1{
+  display: inline-block;
+  position: relative;
+  color: #000;
+  text-shadow: 2px 2px #d8bbff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 2rem;
+ }
+
+h1::after, h1::before{
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: currentColor;
+  top: 0.6em;
+}
+
+h1::before{
+  left: -140px;
+}
+
+h1::after{
+  right: -140px;
+}
+
+.tituloJSON{
+  display: inline-block;
+  position: relative;
+  font-family: "Pacifico", cursive;
+  color: #0a9396;
+  text-shadow: 2px 2px #590d22;
+  margin-top: 5rem;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tituloJSON::after, .tituloJSON::before{
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: currentColor;
+  top: 0.6em;
+}
+
+.tituloJSON::before{
+  left: -140px;
+}
+
+.tituloJSON::after{
+  right: -140px;
+}
+
+.iconBolso{
+  width: 25px;
+}
+
+
+
+.whatsApp img {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 35px;
+    right: 0;
+    border-radius: 50px 5px 5px 50px;
+  }
+
+/*  --- Footer --- */
+footer {
+    width: 100%;
+    background-color: #fcd5ce;
+  }
+  footer .container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0;
+  }
+  footer .box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .box__footer .logo img {
+    width: 180px;
+  }
+
+  .box__footer .terms {
+    max-width: 350px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+  }
+
+  .box__footer h2 {
+    margin-bottom: 20px;
+    color: #343434;
+    font-weight: 700;
+  }
+
+  .box__footer,
+  .a-footer {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+
+  .box__footer,
+  .a-footer:hover {
+    opacity: 0.8;
+  }
+  .box__footer .a-footer .fab {
+    font-size: 20px;
+  }
+
+  .box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+  }
+
+  .box__copyright,
+  .p-footer {
+    margin-top: 20px;
+    color: #7a7a7a;
+  }
+
+  .box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+  }
+
+  @media (max-width: 414px) {
+    .container__footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .box__footer {
+      align-items: center;
+    }
+    .terms {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+
+#proxproductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+.precioProducto {
+    font-weight: 700;
+}
+
+
+img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+#boton-carrito {
+    border: none;
+    color: #000;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 10px 10px;
+    transition: all .3s;
+}
+
+
+/* ----------------------------------------- */
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    /*min-width: 600px;*/
+    padding: 30px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: #dc3545;
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+    
+}
+
+.productoEnCarrito {
+    border-left: 5px solid #dc3545;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    justify-items: start;
+}
+
+.boton-eliminar {
+    border: none; 
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card{
+  display: flex;
+  text-align: center;
+  width: 16rem;
+}
+
+
+
+
+.logoCarro{
+  margin-right: 2rem;
+}
+
+.botonCard{
+  display: inline-flex;
+  justify-content: center;
+  width: 90%;
+  height: 35px;
+  background: #ff006e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s ease all;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.botonCard span {
+  position: relative;
+  z-index: 2;
+  transition: .3s ease all; 
+}
+
+.botonCard::after{
+  content: "";
+  width: 1px;
+  height: 1px;
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: .3s ease-in-out;
+  border-radius: 100px;
+  transform-origin: center;
+}
+
+.botonCard:hover::after{
+  transform: scale(110);
+  background: #2a9d8f;
+}
+
+.botonCard:hover{
+  background: #588157
+}

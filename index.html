@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Edu+SA+Beginner:wght@500&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/R-Rivia-2.PNG" type="" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Rivia Clothing</title>
+</head>
+
+<body>
+<header class="header">
+  <div class="LogoRivia">
+    <a href="#">
+      <img class="header__logo" src="./img/tps.jpeg" alt="LogoTipo" />
+    </a>
+  </div>
+  <div class="logoCarro">
+    <button id="boton-carrito"><i class="fas fa-shopping-cart"><span id="contadorCarro">0</span></i></button>
+  </div>
+</header>
+    
+<div id="contenedor">
+    <h1>Nueva Colección</h1>
+    <main id="productos"></main>
+
+    <h3 class="tituloJSON">Proximamente !! <i><img class="iconBolso" src="./img/bolso.png" alt=""></i> </h3>
+
+    <div id="proxproductos"></div>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito border border-dark">
+            <h3>Tu compra</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carroContenedor"></div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciarCarrito" class="btn btn-dark btn-sm">Vaciar carrito</button>
+            <button id="finalizarCompra" class="btn btn-primary btn-sm">Finalizar compra</button>
+        </div>
+    </div>
+</div>
+
+
+<!----------  icono WhatsApp    --------------->
+<div class="whatsApp">
+    <a
+      href="https://api.whatsapp.com"
+      target="_blank"
+      ><img src="./img/whatsApp.png" alt="Link a WhatsApp"
+    /></a>
+  </div>
+
+<!-- --- Footer ----  -->
+    
+      <footer>
+        <div class="container__footer">
+          <div class="box__footer">
+            <div class="logo">
+              <img src="./img/tps.jpeg" alt="" />
+            </div>
+            <div class="terms">
+              <p class="p-footer">
+                Descubrí e inspirate con nuestro universo, nuestras novedades,
+                eventos, nuevos ingresos, lanzamientos y promociones
+                suscribiéndote a nuestro newsletter.
+              </p>
+            </div>
+          </div>
+  
+          <div class="box__footer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-hanger"
+              width="68"
+              height="68"
+              viewBox="0 0 24 24"
+              stroke-width="1"
+              stroke="#343434"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M15 7a3 3 0 1 0 -3 3v2m0 0l-8.624 5.488a0.82 .82 0 0 0 .44 1.512h16.368a0.82 .82 0 0 0 .44 -1.512l-8.624 -5.488z"
+              />
+            </svg>
+            <a class="a-footer" href="#">Nueva Colección</a>
+            <a class="a-footer" href="#">Carteras</a>
+            <a class="a-footer" href="#">Nosotros</a>
+            <a class="a-footer" href="#">Contacto</a>
+          </div>
+  
+          <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a class="a-footer" href="#">
+              <i class="fab fa-facebook-square"></i> Facebook</a
+            >
+            <a class="a-footer" href="#"
+              ><i class="fab fa-instagram-square"></i> Instagram</a
+            >
+            <a class="a-footer" href="#"
+              ><i class="fab fa-brands fa-tiktok"></i> Tik Tok</a
+            >
+          </div>
+        </div>
+  
+        <div class="box__copyright">
+          <hr />
+          <p>Todos los derechos reservados © 2022 <b>Rivia Clothing</b></p>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/script.js"></script>
+    <script defer src="./js/modal.js"></script>
+
+</body>
+
+</html>
